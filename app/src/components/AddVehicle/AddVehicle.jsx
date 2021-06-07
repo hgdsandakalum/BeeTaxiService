@@ -103,22 +103,14 @@ const AddVehicle = () => {
         console.log(response);
         setMessage(true);
         reset();
-        // history.push("/");
       }).catch((err) => {
         console.log(err);
       })
     }
 
-    // const handleSubmit = (e) => {
-    //   // e.preventDefault();
-      
-    //   console.log(formData);
-    // };
-
     const handleSelect = (e) => {
       setCategory(e.target.value);
 
-      // console.log(e.target.value);
     };
 
     useEffect(() => {

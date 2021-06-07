@@ -12,17 +12,6 @@ router.get('/', async(req, res) => {
     }
 });
 
-// router.get('/:vehicleId', async(req, res) => {
-
-//     try {
-//         const vehicle = await Vehicle.findById(req.params.vehicleId);
-//         res.json(vehicle);
-//     } catch (err) {
-//         res.json({ message: err });
-//     }
-
-// });
-
 router.post('/', async(req, res) => {
     const category = new Categories({
         code: req.body.code,

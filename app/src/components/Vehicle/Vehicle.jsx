@@ -14,8 +14,6 @@ const Vehicle = ({ vehicle, setvehicleData }) => {
         setCategories(vehicle.categories);
     }, []);
 
-    // console.log(categories);
-
     const handleAddToRent = async(vehicle) => {
         setvehicleData(vehicle);
 
